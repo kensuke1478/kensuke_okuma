@@ -8,7 +8,7 @@ $(function () {
      * モーダル
      */
     $('.nav-list10 > .click').on('click', function () {
-        var modalContent = '<figure class="modal main"><img src="zu/img/main01.png" alt=""></figure><figure class="modal main2"><img src="zu/img/main02.png" alt=""></figure>';
+        var modalContent = '<figure class="modal main"><img src="zu/img/main01.png" alt=""></figure>';
 
         $('#overlay').html(modalContent).addClass('fade-in');
         $('#overlay').on('click', function () {
@@ -16,7 +16,7 @@ $(function () {
         });
     });
     $('.nav-list11 > .click').on('click', function () {
-        var modalContent = '<figure class="modal main"><img src="zu02/img/main01.png" alt=""></figure><figure class="modal main2"><img src="zu02/img/main02.png" alt=""></figure>';
+        var modalContent = '<figure class="modal main"><img src="zu02/img/main01.png" alt=""></figure>';
 
         $('#overlay').html(modalContent).addClass('fade-in');
         $('#overlay').on('click', function () {
@@ -24,7 +24,7 @@ $(function () {
         });
     });
     $('.nav-list12 > .click').on('click', function () {
-        var modalContent = '<figure class="modal main"><img src="zu03/img/main01.png" alt=""></figure><figure class="modal main2"><img src="zu03/img/main02.png" alt=""></figure>';
+        var modalContent = '<figure class="modal main"><img src="zu03/img/main01.png" alt=""></figure><figure class="modal main2">';
 
         $('#overlay').html(modalContent).addClass('fade-in');
         $('#overlay').on('click', function () {
