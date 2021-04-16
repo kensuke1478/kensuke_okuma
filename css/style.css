@@ -304,6 +304,57 @@ transition: transform 0.5s ease-in;
 .nav-list12 .click:hover img{
 transform: scale(1.1);
 }
+/*  #overlay
+--------------------------------*/
+#overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 非表示 */
+    opacity: 0;
+    pointer-events: none;
+}
+.modal.main2{
+    width: 10%;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.modal{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal img{
+    width: 100%;
+    height: auto;
+}
+#overlay.fade-in{
+    pointer-events: visible;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fade-in{
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
 /* header h1{
 animation-name: logo_rotation;
